@@ -1,0 +1,29 @@
+# Environnements virtuels
+moviesEnv/
+
+
+
+# Fichiers de configuration
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Fichiers de logs
+*.log
+
+# Fichiers de sauvegardels
+
+*.swp
+
+# Fichiers de compilation
+*.pyc
+*.pyo
+
+# Fichiers de cache
+.cache/
+
+# Dossiers spécifiques à certains outils
+.idea/
+.vscode/
+
