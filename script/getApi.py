@@ -13,7 +13,7 @@ def load_data_to_cassandra():
     }
     
     # Nombre total de pages à récupérer
-    total_pages = 10  # Modifier le nombre total de pages selon vos besoins
+    total_pages = 100  # Modifier le nombre total de pages selon vos besoins
 
     # Boucle pour récupérer les données de chaque page
     for page in range(1, total_pages + 1):
@@ -25,7 +25,7 @@ def load_data_to_cassandra():
             data = response.json()
             movies = data.get("results", [])
 
-            # Insertion des données dans la table Cassandra
+            # Insertion des données dans la table @
             for movie in movies:
                 session.execute("""
                     INSERT INTO movies (id, adult, backdrop_path, original_language, original_title,
