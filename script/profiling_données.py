@@ -10,4 +10,4 @@ train = pd.read_csv('../data/movies_data.csv')
 # le rapport de profilage
 
 prof = ProfileReport(train)
-prof.to_file(output_file='rapport.html')
+prof.to_file(output_file='../docs/rapport.html')
